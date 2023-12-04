@@ -1,5 +1,6 @@
 ```mermaid
 graph TB
+  linkStyle default interpolate basis
   subgraph "Trainee/Researcher User Flow"
     A1[User comes to BWS]
     A2[Browse Tutorials and Training Topics]
@@ -31,6 +32,6 @@ graph TB
     C3-->C4
     C4-->C5
   end
-  B5-->|Published Workshop Material|A2
-  C5-->|Published Software Package|B3
+  B5-.->A2
+  C5-.->B3
   ```
