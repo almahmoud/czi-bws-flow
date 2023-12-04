@@ -26,8 +26,8 @@ graph TB
   subgraph "Package Developer"
     C1(1. Developer comes to BWS)
     C2(2. Launches Developer Environment)
-    C91{{Has access to testing data and computational resources: GPUs, CPUs, high-memory}}
-    C92{{Can launch a test matrix to build & test their package on all Bioconductor operating systems/chip architectures}}
+    C91{{Has access to testing data and compute resources: CPUs, high-memory, GPUs}}
+    C92{{Can test on all Bioconductor operating systems/chip architectures}}
     C3(3. Creates a new software package)
     C4(4. Publishes software package)
     C1-->C2
@@ -37,5 +37,5 @@ graph TB
     C3-.-C92
   end
   B4-.->A2
-  C4-.->B3
+  C4-.->B91
   ```
